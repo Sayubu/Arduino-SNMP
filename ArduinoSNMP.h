@@ -294,7 +294,10 @@ typedef struct SNMP_OID {
     return size;
   }
   
-  byte fromString_P(prog_char *buffer){
+  /**
+   * Comented, because has errors strlen_P not found
+   * /
+ /* byte fromString_P(prog_char *buffer){
       clear();
       
       byte b_size = strlen_P(buffer);
@@ -312,6 +315,7 @@ typedef struct SNMP_OID {
       
       return size;
     }
+  */
   
   /**
    * Copies OID data into a char buffer using dot notation.
